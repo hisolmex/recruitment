@@ -1,0 +1,282 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <title>ACME STORE</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="Seba">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+	<script type="text/javascript">
+		function validateForm() {
+			var x = document.forms["myForm"]["fname"].value;
+			if (x == "") {
+				alert("Fill out mandatory fields");
+				return false;
+			}
+		}
+	</script>
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+<!--HEADER -->
+	<header class="header">
+	<nav class="container translate">
+		<div class="main-nav">
+			<div class="nav-left">
+				<span class="bin" id="span-menu">Menu</span>
+				<img class ="svg-bin" src="img/icon-hamburger.svg" title="bin" alt="bin">
+			</div>
+			<a  class="index-a" href="index.html">ACME STORE</a>
+			<div class="nav-right">
+				<span class="bin" id="bin-count">1</span>
+				<img class ="svg-bin" src="img/icon-bag.svg" title="bin" alt="bin">
+			</div>
+		</div>
+		<ul>
+			<li><a  class="active" href="#home">Women</a></li>
+			<li><a href="#services">Man</a></li>
+			<li><a href="#features">Accesories</a></li>
+			<li><a href="#portfolio">Shoes</a></li>
+			
+		</ul>
+	</nav>
+	</header>
+	<section class="main-section">
+		<div class="container color-gray">
+			<div class="row">
+				<h2 class="form-main-h2">CHECKOUT</h2>
+				<div id="flexbox">
+				<!--FORM -->
+				<div class="col-6">
+					<div class="form-main">
+						<form action="/action_page_post.php" name="myForm" onsubmit="return validateForm()"  method="post" enctype="multipart/form-data" >
+							<div class="form-header">
+								<h2 class="form-h2">DELIVERY ADRESS</h2>
+							</div>
+							<!--NAME-->
+							<div class="form-group">
+								<div class="form-group-label">
+									<label class="label" for="name">FIRST NAME</label>
+									<img src="http://tecfa.unige.ch/guides/svg/ex/html5/svg-import/huge-red-circle.svg" class="svg-red" alt="s" title="s">
+								</div>
+								<div class="form-group-input">
+									<input type="text" class="form-control" id="name"  required>
+								</div>
+							</div>
+							<!--LAST NAME-->
+							<div class="form-group">
+								<div class="form-group-label">
+									<label class="label" for="surname">LAST NAME</label>
+									<img src="http://tecfa.unige.ch/guides/svg/ex/html5/svg-import/huge-red-circle.svg" class="svg-red" alt="s" title="s">
+								</div>
+								<div class="form-group-input">
+									<input type="text" class="form-control" id="surname"  required>
+								</div>
+							</div>
+							<!--E-MAIL-->
+							<div class="form-group">
+								<div class="form-group-label">
+									<label class="label" for="mail">E-MAIL</label>
+									<img src="http://tecfa.unige.ch/guides/svg/ex/html5/svg-import/huge-red-circle.svg" class="svg-red" alt="s" title="s">
+								</div>
+								<div class="form-group-input">
+									<input type="email" class="form-control" id="mail"  required>
+								</div>
+							</div>
+							<!--PHONE-->
+							<div class="form-group">
+								<div class="form-group-label">
+									<label class="label" for="phone">PHONE</label>
+								</div>
+								<div class="form-group-input">
+									<input type="text" class="form-control" id="phone" >
+								</div>
+							</div>
+							<!--ADRESS-->
+							<div class="form-group">
+								<div class="form-group-label">
+									<label class="label" for="address">ADRESS</label>
+									<img src="http://tecfa.unige.ch/guides/svg/ex/html5/svg-import/huge-red-circle.svg" class="svg-red" alt="s" title="s">
+								</div>
+								<div class="form-group-input">
+									<input type="text" class="form-control" id="address"  required>
+								</div>
+							</div>
+							<!--ADRESS CONT-->
+							<div class="form-group">
+								<div class="form-group-label">
+									<label class="label" for="address-cont">ADRESS CONT</label>
+								</div>
+								<div class="form-group-input">
+									<input type="text" class="form-control" id="address-cont" >
+								</div>
+							</div>
+							<!--ZIP CODE-->
+							<div class="form-group">
+								<div class="form-group-label">
+									<label class="label" for="zip">ZIP CODE</label>
+									<img src="http://tecfa.unige.ch/guides/svg/ex/html5/svg-import/huge-red-circle.svg" class="svg-red" alt="s" title="s">
+								</div>
+								<div class="form-group-input">
+									<input type="text" class="form-control" id="zip" required>
+								</div>
+							</div>
+							<!--CITY-->
+							<div class="form-group">
+								<div class="form-group-label">
+									<label class="label" for="city">CITY</label>
+									<img src="http://tecfa.unige.ch/guides/svg/ex/html5/svg-import/huge-red-circle.svg" class="svg-red" alt="s" title="s">
+								</div>
+								<div class="form-group-input">
+									<input type="text" class="form-control" id="city" >
+								</div>
+							</div>
+							<!--STATE-->
+							<div class="form-group">
+								<div class="form-group-label">
+									<label class="label" for="state">STATE</label>
+									<img src="http://tecfa.unige.ch/guides/svg/ex/html5/svg-import/huge-red-circle.svg" class="svg-red" alt="s" title="s">
+								</div>
+								<div class="form-group-input">
+									<input type="text" class="form-control" id="state">
+								</div>
+							</div>
+							<!--COUNTRY-->
+							<div class="form-group">
+								<div class="form-group-label">
+									<label class="label" for="state">COUNTRY</label>
+									<img src="http://tecfa.unige.ch/guides/svg/ex/html5/svg-import/huge-red-circle.svg" class="svg-red" alt="s" title="s">
+								</div>
+								<div  class="form-group-input select-style">
+									<select id="my-select"  name="carlist" >
+										<option value="united-states">United States</option>
+										<option value="country-2">Country 2</option>
+										<option value="country-3">Country 3</option>
+										<option value="country-4">Country 4</option>
+									</select>
+								</div>
+							</div>
+							<h2 class="form-h2">PAYMENT</h2>
+							<!--CADR NUMBER-->
+							<div class="form-group">
+								<div class="form-group-label">
+									<label class="label2" for="card">CARD NUMBER</label>
+									<img src="http://tecfa.unige.ch/guides/svg/ex/html5/svg-import/huge-red-circle.svg" class="svg-red" alt="s" title="s">
+								</div>
+								<div class="form-group-input">
+									<input type="text" class="form-control" id="card">
+								</div>
+							</div>
+							<!--CARD HOLDER-->
+							<div class="form-group">
+								<div class="form-group-label">
+									<label class="label2" for="card2">CARD HOLDER</label>
+									<img src="http://tecfa.unige.ch/guides/svg/ex/html5/svg-import/huge-red-circle.svg" class="svg-red" alt="s" title="s">
+								</div>
+								<div class="form-group-input">
+									<input type="text" class="form-control" id="card2">
+								</div>
+							</div>
+							<!--CVC-->
+							<div class="form-group">
+								<div class="form-group-label">
+									<label class="label" for="cvc">CVC</label>
+									<img src="http://tecfa.unige.ch/guides/svg/ex/html5/svg-import/huge-red-circle.svg" class="svg-red" alt="s" title="s">
+								</div>
+								<div class="form-group-input">
+									<input type="text" class="form-control" id="cvc">
+								</div>
+							</div>
+							<input type="submit" value="BUY" onclick="validateForm()">
+						</form>
+					</div>
+				</div>
+				
+				<div class="col-1b">
+					<!-- SPACE-->
+					<!-- SPACE-->
+				</div>
+				<!--ORDER -->
+				<div class="col-4">
+					<div class="order-margin">
+						<div class="form-header">
+							<h2 class="form-h2 ">YOUR ORDER</h2>
+							<div class="row row-margin">
+								<div class="col-3 padding2">
+									<div class="img-div">
+										<img src="img/pic-item.png" class="img-responsive" alt="ff" title="ff">
+									</div>
+								</div>
+								<div class="col-9 my-padding">
+									
+									<h2 class="order-h2">Acme product name</h2>
+									<div class="order-summary">
+										<div class="product">
+											<span class="span-price small" id="product1">Qty</span>
+										</div>
+										<div class="price">
+											<span class="span-price small " id="price1">1</span>
+										</div>
+									</div>
+									<div class="order-summary">
+										<div class="product">
+											<span class="span-price small " id="product2">Price</span>
+										</div>
+										<div class="price">
+											<span class="span-price bold small" id="price2">$300,00</span>
+										</div>
+									
+									</div>
+									
+								</div>
+							</div>
+						</div>
+						<div class="form-header">
+							<h2 class="form-h2">ORDER SUMMARY</h2>
+							<div class="order-summary">
+								<div class="product">
+									<span class="span-price" id="product3">Subtotal</span>
+								</div>
+								<div class="price">
+									<span class="span-price" id="price3">$300,00</span>
+								</div>
+							</div>
+							<div class="order-summary">
+								<div class="product">
+									<span class="span-price" id="product4">Shopping</span>
+								</div>
+								<div class="price">
+									<span class="span-price" id="price4">$20,00</span>
+								</div>
+							
+							</div>
+							<hr>
+							<div class="order-summary">
+								<div class="product">
+									<span class="span-price" id="product5">Total</span>
+								</div>
+								<div class="price">
+									<span class="span-price-all" id="price-all">$320,00</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+
+	  <p></p>
+	  
+	</footer>
+</body>
+</html>
